@@ -1,0 +1,481 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+
+/* NAVBAR SECTION */
+
+.section {
+    background-color: rgb(13, 84, 215);
+}
+
+.section .mobile-nav-bar {
+    display: none;
+}
+
+.section .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(13, 84, 215) !important;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.section .nav-bar .logo {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 58px;
+}
+
+.section .nav-bar i {
+    color: #fff;
+    font-size: 55px;
+    margin-left: 25px;
+}
+
+.section .nav-bar small {
+    font-size: 10px;
+    color: #fff;
+}
+
+.section .nav-links .navbar-nav {
+    margin-left: auto;
+    padding-right: 40px;
+}
+
+.section .nav-links .navbar-nav a {
+    color: #fff;
+    margin-right: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.section .nav-links a::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 3px;
+    bottom: -6px;
+    left: 0;
+    border-radius: 5px;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.section .nav-links a:hover::after {
+    transform: scale(1);
+}
+
+
+/* <DIV> OUR SERVICE SECTION</DIV> */
+
+
+.first-section  {
+    position: relative;
+    bottom: 6px;
+}
+
+.first-section .background-img {
+    background-image: url("../images/about_bg-removebg-preview.png");
+    background-size: cover;
+    background-position: center;
+    /* padding: 40px 0px; */
+}
+
+.first-section .background-img .overlay {
+    background-color: rgba(13, 84, 215);
+    padding: 15px 0px;
+} 
+
+.first-section .background-img .overlay .first-section-left-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0px auto;
+    
+}
+
+.first-section .background-img .overlay .first-section-left-right h1 {
+    margin: 30px 0px;
+    color: #fff;
+    line-height: 55px;
+    font-weight: 600;
+}
+
+.first-section .background-img .overlay .first-section-left-right p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.first-section .background-img .overlay .first-section-left-right .first-section-right {
+    width: 30%;
+}
+
+.first-section .background-img .overlay .first-section-left-right .first-section-right img {
+    width: 100%;
+}
+
+/* <DIV>UP ARROW</DIV> */
+
+.up-arrow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 30px 0px;
+}
+
+.up-arrow span a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.up-arrow span i {
+    position: absolute;
+    right: 0;
+    color: rgb(13, 84, 215);
+    font-size: 30px;
+}
+
+
+/* SECOND SECTION SMART, SCALABLE */
+
+.second-section {
+  padding: 70px 0px;
+  background-color: rgb(238, 242, 243);
+}
+
+.second-section .second-section-left-right {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 80px auto;
+    align-items: center;
+}
+
+.second-section .second-section-left-right .second-section-left {
+    width: 100%;
+}
+
+.second-section .second-section-left-right .second-section-left span {
+    color: rgb(13, 84, 215);
+    font-weight: 600;
+}
+
+.second-section .second-section-left-right .second-section-left h1 {
+    font-weight: 600;
+    margin: 20px 0px;
+    width: 90%;
+}
+
+.second-section .second-section-left-right .second-section-left p {
+    line-height: 30px;
+    width: 72%;
+}
+
+.second-section .second-section-left-right .second-section-left button {
+    padding: 5px 15px;
+    background-color: rgb(13, 84, 215) !important;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.second-section .second-section-left-right .second-section-right {
+    width: 100%;
+}
+ 
+.second-section .second-section-left-right .second-section-right .second-section-right-content-up {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    /* width: 80%; */
+    margin-bottom: 20px;
+}
+
+.second-section .service{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    transition: .4s;
+    border-radius: 10px;
+}
+
+.second-section .service:hover{
+    color: white;
+    background-color: rgb(87, 143, 247);
+}   
+
+.second-section .service:hover .fa, .button {
+    color: rgb(87, 143, 247);
+    background-color: white !important;
+}
+
+.second-section .second-section-left-right .second-section-right .second-section-right-content-up #computer-sales i {
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(13, 84, 215);
+    background-color: rgb(238, 242, 243);
+    margin: 0px 85px;
+    border-radius: 50%;
+    padding: 15px 17px;
+    
+}
+
+.second-section .second-section-left-right .second-section-right .second-section-right-content-up #computer-sales h3 {
+    margin: 20px 0px;
+}
+
+.second-section .second-section-left-right .second-section-right .second-section-right-content-up #computer-sales p {
+    line-height: 30px;
+} 
+
+.second-section .second-section-left-right .second-section-right .second-section-right-content-up #computer-sales button {
+    padding: 5px 15px;
+    color: rgb(13, 84, 215);
+    border: none;
+    border-radius: 25px;
+    background-color: transparent;
+    margin: 0px 60px;
+}
+
+.second-section .second-section-left-right .second-section-right .second-section-right-content-up #general-IT i {
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(13, 84, 215);
+    background-color: #fff;
+    margin: 0px 85px;
+    border-radius: 50%;
+    padding: 12px 10px;    
+}
+
+.second-section .second-section-left-right .second-section-right .second-section-right-content-up #general-IT h3 {
+    margin: 20px 0px;
+}
+
+.second-section .second-section-left-right .second-section-right .second-section-right-content-up #general-IT p {
+    line-height: 30px;
+} 
+
+.second-section .second-section-left-right .second-section-right .second-section-right-content-up #general-IT button {
+    padding: 5px 15px;
+    color: rgb(13, 84, 215);
+    border: none;
+    border-radius: 25px;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+.second-section .second-section-left-right .second-section-right .second-section-right-content-down {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.second-section .second-section-left-right .second-section-right .second-section-right-content-down #graphic-design i {
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(13, 84, 215);
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 13px;
+}
+
+.second-section .second-section-left-right .second-section-right .second-section-right-content-down #graphic-design h3 {
+    margin: 20px 0px;
+}
+
+.second-section .second-section-left-right .second-section-right .second-section-right-content-down #graphic-design p {
+    line-height: 30px;
+} 
+
+.second-section .second-section-left-right .second-section-right .second-section-right-content-down #graphic-design button {
+    padding: 5px 15px;
+    color: rgb(13, 84, 215);
+    border: none;
+    border-radius: 25px;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+.second-section .second-section-left-right .second-section-right .second-section-right-content-down #website-development i {
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(13, 84, 215);
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 14px 13px;
+}
+
+.second-section .second-section-left-right .second-section-right .second-section-right-content-down #website-development h3 {
+    margin: 20px 0px;
+}
+
+.second-section .second-section-left-right .second-section-right .second-section-right-content-down #website-development p {
+    line-height: 30px;
+} 
+
+.second-section .second-section-left-right .second-section-right .second-section-right-content-down #website-development button {
+    padding: 5px 15px;
+    color: rgb(13, 84, 215);
+    border: none;
+    border-radius: 25px;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+
+ /* THIRD SECTION OUR TEAM  */
+
+.third-section {
+    margin-top: 40px;
+}
+ 
+.third-section .third-section-contents {
+    text-align: center;
+} 
+
+.third-section .third-section-contents #more-service {
+    padding: 5px 15px;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-weight: 500;
+    background-color: rgb(13, 84, 215);
+}
+
+.third-section .third-section-contents h1 {
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.third-section .third-section-contents p {
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.third-section .trainers-card {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 60px auto;
+    gap: 20px;
+}
+
+.third-section .trainers-card .team-member-card img {
+    width: 100%;
+    transition: 0.4s ease-in-out;
+}
+
+.third-section .trainers-card .team-member-card img:hover {
+    width: 104%;
+}
+
+.third-section .trainers-card .team-member-card h3 {
+    margin: 20px 0px;
+}
+
+.third-section .trainers-card .team-member-card p {
+    line-height: 30px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 380px) {
+.grid-auto-fit {
+   overflow-x: hidden;
+   width: 100%;
+}
+
+.section .nav-bar {
+    display: none;
+    justify-content: space-between;
+    background-color: rgb(13, 84, 215) !important;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.section .mobile-nav-bar {
+    display: block;
+}
+
+.section .m-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(13, 84, 215)!important;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.section .mobile-nav-bar.navbar-brand p,i,small {
+    color: #f5f5f5;
+}
+
+
+/* ABOUT SECTION */
+
+.first-section  {
+    padding-top: 0px !important;
+}
+
+.first-section .background-img .overlay .first-section-left-right {
+    display: block;
+    width: 85%;
+}
+
+.first-section .background-img .overlay .first-section-left {
+    text-align: center;
+}
+
+.first-section .background-img .overlay .first-section-left-right .first-section-right {
+    width: 100%;
+}
+
+/* SECOND SECTION SMART, SCALABLE */
+
+.second-section {
+    padding: 10px 0px;
+}
+
+.second-section .second-section-left{
+    margin-bottom: 40px;
+}
+
+.second-section .second-section-left-right {
+    display: block;
+}
+
+.second-section .second-section-left-right .second-section-left h1 {
+   width: 100%;
+}
+
+.second-section .second-section-left-right .second-section-left p {
+    width: 100%;
+}
+
+.second-section .second-section-left-right .second-section-right .second-section-right-content-up {
+    grid-template-columns: 1fr
+}
+
+.second-section .second-section-left-right .second-section-right .second-section-right-content-down {
+    grid-template-columns: 1fr;
+}
+
+/* MORE SERVICES */
+
+.third-section .trainers-card {
+    display: block;
+}
+}
