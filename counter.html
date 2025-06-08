@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -40,10 +40,38 @@
       </div>
     </div>   
   </div>
-</div>
+</div> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Map Example</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+
+  <h1>My Google Map</h1>
+  <div id="map" style="height: 400px; width: 100%;"></div>
+
+  <script>
+    function initMap() {
+      const location = { lat: 40.7128, lng: -74.0060 };
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 12,
+        center: location,
+      });
+      const marker = new google.maps.Marker({
+        position: location,
+        map: map,
+      });
+    }
+  </script>
+
+</body>
+</html>
 
 <!-- Scripts -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/counterup2@2.0.2/dist/index.umd.js"></script>
 
@@ -64,7 +92,9 @@
       });
     });
   });
+
+
 </script>
 
 </body>
-</html>
+</html> -->

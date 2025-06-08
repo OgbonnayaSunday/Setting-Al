@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./Styles/font-awesome.min.css">
     <link rel="stylesheet" href="./Styles/bootstrap.css">
     <link rel="stylesheet" href="./Styles/About.css">
+    <link rel="stylesheet" href="./Styles/aos.css">
 </head>
 <body>
     <div class="grid-auto-fit">
@@ -15,44 +16,22 @@
             <div class="nav-nav-links">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light nav-bar">
                     <div class="logo">
-                        <a class="navbar-brand" href="index.html"><i class="fa fa-cog"></i></a>
-                        <small>welcome to my page</small>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <a class="navbar-brand" href="index.html"><img src="./images/settings al logo.png" alt="image"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 280px;color: white !important;">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                     </div>
-                    <div class="collapse navbar-collapse nav-links" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
+                    <div class="collapse navbar-collapse nav-links" id="navbarNavAltMarkup" style="background-color: rgb(13, 84, 215);">
+                        <div class="navbar-nav ms-auto">
                             <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                             <a class="nav-item nav-link active" href="About.html">About</a>
                             <a class="nav-item nav-link" href="Service.html">Services</a>
-                            <a class="nav-item nav-link" href="#">Project</a>
-                            <a class="nav-item nav-link" href="#">Contact</a>
+                            <a class="nav-item nav-link" href="Project.html">Project</a>
+                            <a class="nav-item nav-link" href="Contact.html">Contact</a>
                         </div>
                     </div>
                 </nav>
-            </div>
-            <div class="mobile-nav-bar">
-                <div class="nav-nav-links">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light m-nav-bar" style="position: relative;">
-                        <div class="logo">
-                            <a class="navbar-brand" href="#"><p><i class="fa fa-cog"></i></p><small>welcome to my page</small></a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                        </div>
-                        <div class="collapse navbar-collapse nav-links" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                                <a class="nav-item nav-link active" href="About.html">About</a>
-                                <a class="nav-item nav-link" href="Service.html">Services</a>
-                                <a class="nav-item nav-link" href="#">Project</a>
-                                <a class="nav-item nav-link" href="#">Contact</a>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+            </div>  
         </div>
     </div>
 
@@ -67,7 +46,7 @@
                             <p>Home / About US</p>
                         </div>
                         <div class="first-section-right">
-                            <img src="./images/about_robot-removebg-preview.png" alt="image">
+                            <img src="./images/robot1.png" alt="image" data-aos="fade-in" data-aos-delay="200">
                         </div>
                     </div>
                 </div>
@@ -81,7 +60,7 @@
      
         <div class="second-section">
             <div class="second-section-left-right">
-                <div class="second-section-left">
+                <div class="second-section-left" data-aos="fade-in" data-aos-delay="200">
                     <img src="./images/setting img 1.jpeg" alt="image">
                 </div>
                 <div class="second-section-right">
@@ -166,7 +145,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="third-section-right">
+                <div class="third-section-right" data-aos="fade-in" data-aos-delay="200">
                     <img src="./images/stylish-robot-pointing_1048-3528_prev_ui.png" alt="image">
                 </div>
             </div>
@@ -183,7 +162,7 @@
                 <h1>Meet Our Team Of Experts</h1>
                 <p>Our team of dedicated professionals brings a wealth of experience and expertise <br> to every project, ensuring that we deliver the highest <br> quality solutions tailored to your needs.</p>
             </div>
-            <div class="team-member">
+            <div class="team-member" data-aos="fade-in" data-aos-delay="200">
                 <div class="team-member-card">
                     <img src="./images/team member.avif" alt="image">
                     <h3>John Doe</h3>
@@ -207,13 +186,13 @@
         <div class="fifth-section">
             <div class="fifth-section-left-right">
                 <div class="fifth-section-left">
-                    <img src="./images/setting award .jpeg" alt="image">
+                    <img src="./images/setting award .jpeg" alt="image" data-aos="fade-in" data-aos-delay="200">
                 </div>
                 <div class="fifth-section-right">
                     <span id="award">Award</span>
                     <h1 class="award">Award-Winning Tech Solutions For Your Business</h1>
                     <p>We're proud to be recognized as <span>Bowie's Best Of 2024</span> For Outstanding Customer Satisfaction. At COMPUTER SOLUTIONS PROVIDERS INC, this award rellects our unwavering commitment to delivering cutting-edge technology services, excellent support, or digital consulting __ we empower your business with dependable, professional expertise.</p>
-                    <button id="contact-us">Explore Our Service</button>
+                    <button class="contact-us" id="btn5" type="submit">Explore Our Service</button>
                 </div>
             </div>
         <!-- </div> -->
@@ -222,7 +201,7 @@
 
             <div class="sixth-section">
                 <div class="sixth-section-left-right">
-                    <div class="sixth-section-left">
+                    <div class="sixth-section-left" data-aos="fade-in" data-aos-delay="200">
                         <img src="./images/robot3-removebg-preview.png" alt="image">
                     </div>
                     <div class="sixth-section-right">
@@ -240,18 +219,17 @@
                 <div class="seventh-section-footer-overlay">
                     <div class="seventh-section-footer-contents">
                         <div class="grid-one">
-                            <a class="navbar-brand" href="#"><i class="fa fa-cog"></i></a>
-                            <small>welcome to my page</small>
+                            <a class="navbar-brand" href="About.html"><img src="./images/settings al logo.png" alt="image"></a>
                             <p>At Computer Solutions Providers Inc, we deliver smart, scalable tech solutions that move businesses forward with confidence and ease.</p>
                         </div>
                         <div class="grid-two">
                             <h4>Get In Touch</h4>
-                            <div class="grid-two-contents">
+                            <div class="grid-two-contents" data-aos="fade-in" data-aos-delay="200">
                                 <span><i class="fa fa-map" style="margin-right: 20px;"></i> 13003 9th Street, Bowie, Maryland, USA</span>
-                                <p><i class="fa fa-phone" style="margin-right: 20px;"></i> +1 301-377-1224</p>
-                                <p><i class="fa fa-envelope" style="margin-right: 20px;"></i> ogbestchibuzo7@gmail.com</p>
+                                <a href="mailto: +1 301-377-1224"><p><i class="fa fa-phone" style="margin-right: 20px;"></i>click here to call us</p></a>
+                                <a href="mailto: ogbestchibuzo7@gmail.com?subject=Subject%20Inquiry"><p><i class="fa fa-envelope" style="margin-right: 20px;"></i>click here to email us</p></a>
                             </div>
-                            <div class="footer-icons">
+                            <div class="footer-icons" data-aos="fade-in" data-aos-delay="200">
                                 <i class="fa fa-twitter"></i>
                                 <i class="fa fa-facebook"></i>
                                 <i class="fa fa-youtube-play"></i>
@@ -270,7 +248,7 @@
                         </div>
                         <div class="grid-four">
                             <h4>Our Services</h4>
-                            <div>
+                            <div data-aos="fade-in" data-aos-delay="200">
                                 <a href="#"><i class="fa fa-angle-right"></i> Website Design & Development</a>
                                 <a href="#"><i class="fa fa-angle-right"></i> Graphic Design</a>
                                 <a href="#"><i class="fa fa-angle-right"></i> IT Consultancy</a>
@@ -288,5 +266,12 @@
     <script src="./Script/jquery-3.2.1.min.js"></script>
     <script src="./Script/bootstrap.js"></script>
     <script src="./Script/script.js"></script>
+    <script src="./Script/aos.js"></script>
+    <script>
+        AOS.init({
+                duration: 1200,
+                once: true
+            });
+    </script>
 </body>
 </html>    
