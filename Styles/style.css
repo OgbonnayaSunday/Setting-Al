@@ -557,7 +557,7 @@
     padding: 15px;
 }
 
-.fourth-section .fourth-section-left-right .fourth-section-left .group-icon .group-icon-check-icon #number {
+.fourth-section .fourth-section-left-right .fourth-section-left .group-icon .group-icon-check-icon .counter {
     margin-left: 6px;
     position: relative;
     top: 10px;
@@ -565,7 +565,7 @@
     font-size: 20px;
 }
 
-.fourth-section .fourth-section-left-right .fourth-section-left .group-icon .group-icon-check-icon #happy-client {
+.fourth-section .fourth-section-left-right .fourth-section-left .group-icon .group-icon-check-icon .label {
     position: relative;
     left: 90px;
     bottom: 40px;
@@ -591,7 +591,7 @@
     padding: 15px;
 }
 
-.fourth-section .fourth-section-left-right .fourth-section-left .group-icon .group-icon-check-icon #check #number {
+.fourth-section .fourth-section-left-right .fourth-section-left .group-icon .group-icon-check-icon #check .counter {
     margin-left: 6px;
     position: relative;
     top: 10px;
@@ -599,7 +599,7 @@
     font-size: 20px;
 }
 
-.fourth-section .fourth-section-left-right .fourth-section-left .group-icon .group-icon-check-icon #project {
+.fourth-section .fourth-section-left-right .fourth-section-left .group-icon .group-icon-check-icon .label {
     position: relative;
     left: 90px;
     bottom: 40px;

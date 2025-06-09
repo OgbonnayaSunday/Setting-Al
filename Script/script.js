@@ -14,6 +14,33 @@
 // })
 
 
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200; // lower = faster
+
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+
+            const increment = target / speed;
+
+            if (count < target) {
+                counter.innerText = Math.ceil(count + increment);
+                setTimeout(updateCount, 10);
+            } else {
+                counter.innerText = target + "+"; // Add the plus sign after completion
+            }
+        };
+
+        updateCount();
+    });
+
+
+
+
+
+
+
 // functions command for buttons
 
 let project1 = document.getElementById("project1");

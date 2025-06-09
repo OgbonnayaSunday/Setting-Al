@@ -42,33 +42,6 @@
   </div>
 </div> -->
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Google Map Example</title>
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-</head>
-<body>
-
-  <h1>My Google Map</h1>
-  <div id="map" style="height: 400px; width: 100%;"></div>
-
-  <script>
-    function initMap() {
-      const location = { lat: 40.7128, lng: -74.0060 };
-      const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 12,
-        center: location,
-      });
-      const marker = new google.maps.Marker({
-        position: location,
-        map: map,
-      });
-    }
-  </script>
-
-</body>
-</html>
 
 <!-- Scripts -->
 <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -98,3 +71,79 @@
 
 </body>
 </html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .group-icon {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+.group-icon i {
+  font-size: 40px;
+  color: #4CAF50;
+}
+.counter {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.label {
+  font-size: 16px;
+  color: #777;
+}
+</style>
+</head>
+<body>
+  
+  <div class="group-icon">
+  <div class="group-icon-check-icon">
+    <div id="group-icons">
+      <div class="group">
+        <i class="fa fa-group"></i>
+        <p class="counter" data-target="1000">0</p>
+      </div>
+      <p class="label">Happy Clients</p>
+    </div>
+    <div class="check-icon">
+      <div id="check">
+        <i class="fa fa-check"></i>
+        <p class="counter" data-target="1000">0</p>
+      </div>
+      <p class="label">Projects</p>
+    </div>
+  </div>
+</div>
+
+
+
+  <script>
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200; // lower = faster
+
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+
+            const increment = target / speed;
+
+            if (count < target) {
+                counter.innerText = Math.ceil(count + increment);
+                setTimeout(updateCount, 10);
+            } else {
+                counter.innerText = target + "+"; // Add the plus sign after completion
+            }
+        };
+
+        updateCount();
+    });
+</script>
+
+</body>
+</html>
