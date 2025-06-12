@@ -63,14 +63,10 @@
     }
 }
 
-.section {
-    background-color: rgb(13, 84, 215) !important;
-}
-
-.section .nav-bar {
+.navbar {
     margin: 0px auto;
     display: flex;
-    height: 68px;
+    height: 95px;
     justify-content: space-between;
     background-color: rgb(13, 84, 215) !important;
     position: fixed;
@@ -78,42 +74,26 @@
     z-index: 99;
 }
 
-.section .nav-bar .logo a {
-    width: 10%;
-}
-
-.section .nav-bar .logo a img {
-    width: 100%;
-}
-
-.section .nav-links .navbar-nav {
+.navbar .navbar-nav {
+    background-color: rgb(13, 84, 215);
+    color: #fff !important;
     margin-left: auto;
-    padding-right: 40px;
 }
 
-.section .nav-links .navbar-nav a {
-    color: #fff;
-    margin-right: 20px;
-    font-weight: 600;
+.navbar .navbar-nav .nav-item a {
+    color: #fff !important;
+    font-size: 17px;
+    font-weight: 600 !important;
+    margin: 0px 5px;
+    opacity: 1;
     position: relative;
 }
 
-.section .nav-links a::after {
-    content: "";
-    position: absolute;
-    background-color: #fff;
-    width: 100%;
-    height: 3px;
-    bottom: -6px;
-    left: 0;
-    border-radius: 5px;
-    transform: scale(0);
-    transition: 0.5s;
+.navbar .navbar-nav .nav-item a:hover {
+    color: #000000;
+    opacity: 0.8;
 }
 
-.section .nav-links a:hover::after {
-    transform: scale(1);
-}
 
 /* FIRST SECTION EMPOWER UR BUSINESS */
 
@@ -126,7 +106,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;    
-    width: 90%;
+    width: 95%;
     margin: 0px auto;
 }
 
@@ -185,16 +165,13 @@
 
 /* SECOND SECTION WE OFFER BUSSINESS */
 
-.second-section {
-    height: 100px;
-}
 
 .second-section .second-section-left-right {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     margin: 0px auto;
-    padding-top: 150px;
+    padding-top: 90px;
 }
 
 .second-section .second-section-left-right .second-section-left {
@@ -218,7 +195,7 @@
 .second-section .second-section-left-right .second-section-right h1 {
     font-size: 50px;
     font-weight: 600;
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 
 .second-section .second-section-left-right .second-section-right p {
@@ -251,6 +228,10 @@
     display: flex;
     align-items: center;
     transition: 0.4s ease-in-out;
+}
+
+.second-section .second-section-left-right .second-section-right .btn-icons i {
+    border: 2px solid black;
 }
 
 .second-section .second-section-left-right .second-section-right .btn-icons i:hover {
@@ -299,7 +280,7 @@
 .third-section .third-section-left-right {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     margin: 80px auto;
     align-items: center;
 }
@@ -488,7 +469,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 95%;
     margin: 0px auto;
     padding-top: 70px;
 }
@@ -607,12 +588,13 @@
 
 .fourth-section .fourth-section-left-right .fourth-section-right img {
     margin-top: 140px;
+    width: 100%;
 }
 
 /* EXPERIENCE OUR RECENT PROJECT */
 
 .fifth-div-section {
-    width: 90%;
+    width: 95%;
     margin: 70px auto;
 }
 
@@ -908,7 +890,7 @@
 .sixth-section .sixth-section-left-right {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     margin: 70px auto;
     gap: 10px;
 }
@@ -959,7 +941,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 95%;
     margin: 70px auto;
     padding-top: 12vh;
 }
@@ -1040,7 +1022,7 @@
 .eight-section .eight-section-left-right {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     margin: 50px auto;
 }
 
@@ -1054,7 +1036,7 @@
 
 .eight-section .eight-section-left-right .eight-section-right {
     padding: 80px 0px;
-    /* width: 48%; */
+    width: 100%;
 }
 
 .eight-section .eight-section-left-right .eight-section-right #get-in-touch {
@@ -1073,7 +1055,7 @@
 }
 
 .eight-section .eight-section-left-right .eight-section-right p {
-    width: 80%;
+    width: 95%;
     line-height: 1.8em;
     margin-bottom: 30px;
 }
@@ -1092,7 +1074,7 @@
 
  
 .nineth-section-footer-bg  {
-    background: linear-gradient(90deg, rgb(2, 2, 49),rgb(13,84,215));
+    background: linear-gradient(90deg, rgb(13,84,215),rgb(2, 2, 49));
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
@@ -1103,7 +1085,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 200px;
     gap: 30px;
-    width: 90%;
+    width: 95%;
     margin: 0px auto;
     padding-top: 80px;
     padding-bottom: 140px;
@@ -1123,7 +1105,7 @@
 }
 
 .nineth-section-footer-bg .nineth-section-footer-overlay .nineth-section-footer-contents .grid-one a img {
-    width: 100%;
+    width: 80%;
 }
 
 .nineth-section-footer-bg .nineth-section-footer-overlay .nineth-section-footer-contents .grid-one p {
@@ -1257,8 +1239,13 @@
 
 @media screen and (max-width:1024px) {
 
+body {
+    overflow-x: hidden;
+}    
+
+
 .first-section {
-    padding-top: 10vh !important;
+    padding-top: 20vh !important;
     background-color: rgb(13, 84, 215) !important;
 }
 
@@ -1342,9 +1329,9 @@
 
 @media screen and (max-width:980px) {
 
-.navbar-nav {
-    display: flex;
-}
+body {
+    overflow-x: hidden;
+}    
 
 .second-section .second-section-left-right {
     display: block;
@@ -1424,6 +1411,10 @@
 
 
 @media screen and (max-width:860px) {
+
+body {
+    overflow-x: hidden;
+}    
 
 /* FIRST SECTION EMPOWER UR BUSINESS */
 
@@ -2022,19 +2013,18 @@
 
 @media screen and (max-width:560px) {
 
-.grid-auto-fit {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    overflow-x: hidden;  
-}
+body {
+    overflow-x: hidden;
+}    
 
 
 /* FIRST SECTION EMPOWER UR BUSINESS */
 
 .first-section {
-    width: 100%;
-    margin: 0px auto;
-    padding-top: 1vh;
+    padding-top: 15vh !important;
+    background-color: rgb(13, 84, 215) !important;
 }
+
 
 .first-section .first-section-left-right {
     display: block;
@@ -2625,10 +2615,10 @@
 
 @media screen and (max-width:480px) {
 
-    .grid-auto-fit {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        overflow-x: hidden;  
-    }
+body {
+    overflow-x: hidden;
+}    
+
 
 /* FIRST SECTION EMPOWER UR BUSINESS */
 
@@ -3142,10 +3132,9 @@
 }
 @media screen and (max-width:380px) {
 
-.grid-auto-fit {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    overflow-x: hidden;  
-}
+body {
+    overflow-x: hidden;
+}    
 
 .section .nav-links .navbar-nav {
     margin-left: auto;
@@ -3157,12 +3146,12 @@
 .first-section {
     padding-top: 14vh;
     background-color: rgb(13, 84, 215) !important;
+    /* text-align: center; */
 }
 
 .first-section .first-section-left-right {
     display: block;
 }
-
 
 
 

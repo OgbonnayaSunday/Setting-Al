@@ -11,9 +11,10 @@
     background-color: rgb(13, 84, 215);
 }
 
-.section .nav-bar {
+.navbar {
+    margin: 0px auto;
     display: flex;
-    height: 68px;
+    height: 95px;
     justify-content: space-between;
     background-color: rgb(13, 84, 215) !important;
     position: fixed;
@@ -21,49 +22,33 @@
     z-index: 99;
 }
 
-.section .nav-bar .logo a {
-    width: 10%;
-}
-
-.section .nav-bar .logo a img {
-    width: 100%;
-}
-
-.section .nav-links .navbar-nav {
+.navbar .navbar-nav {
+    background-color: rgb(13, 84, 215);
+    color: #fff !important;
     margin-left: auto;
-    padding-right: 40px;
 }
 
-.section .nav-links .navbar-nav a {
-    color: #fff;
-    margin-right: 20px;
-    font-weight: 600;
+.navbar .navbar-nav .nav-item a {
+    color: #fff !important;
+    font-size: 17px;
+    font-weight: 600 !important;
+    margin: 0px 5px;
+    opacity: 1;
     position: relative;
 }
 
-.section .nav-links a::after {
-    content: "";
-    position: absolute;
-    background-color: #fff;
-    width: 100%;
-    height: 3px;
-    bottom: -6px;
-    left: 0;
-    border-radius: 5px;
-    transform: scale(0);
-    transition: 0.5s;
-}
-
-.section .nav-links a:hover::after {
-    transform: scale(1);
+.navbar .navbar-nav .nav-item a:hover {
+    color: #000000;
+    opacity: 0.8;
 }
 
 
 /* <DIV> OUR SERVICE SECTION</DIV> */
 
 
-.first-section  {
-    padding-top: 0px;
+.first-section {
+    padding-top: 15vh;
+    background-color: rgb(13, 84, 215) !important;
 }
 
 .first-section .background-img {
@@ -82,7 +67,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 95%;
     margin: 0px auto;
     
 }
@@ -140,7 +125,7 @@
 .second-section .second-section-left-right {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     margin: 80px auto;
     align-items: center;
 }
@@ -227,7 +212,7 @@
     color: rgb(13, 84, 215);
     border: none;
     border-radius: 25px;
-    background-color: transparent;
+    background-color: rgb(238, 242, 243) !important;
     margin: 0px 60px;
 }
 
@@ -235,10 +220,10 @@
     font-size: 30px;
     text-decoration: none;
     color: rgb(13, 84, 215);
-    background-color: #fff;
+    background-color: rgb(238, 242, 243);
     margin: 0px 85px;
     border-radius: 50%;
-    padding: 12px 10px;    
+    padding: 15px 13px;    
 }
 
 .second-section .second-section-left-right .second-section-right .second-section-right-content-up #general-IT h3 {
@@ -255,7 +240,7 @@
     border: none;
     border-radius: 25px;
     font-weight: 500;
-    background-color: transparent;
+    background-color: rgb(238, 242, 243) !important;
 }
 
 .second-section .second-section-left-right .second-section-right .second-section-right-content-down {
@@ -269,7 +254,7 @@
     font-size: 30px;
     text-decoration: none;
     color: rgb(13, 84, 215);
-    background-color: #fff;
+    background-color: rgb(238, 242, 243);
     border-radius: 50%;
     padding: 13px;
 }
@@ -288,14 +273,14 @@
     border: none;
     border-radius: 25px;
     font-weight: 500;
-    background-color: transparent;
+    background-color: rgb(238, 242, 243) !important;
 }
 
 .second-section .second-section-left-right .second-section-right .second-section-right-content-down #website-development i {
     font-size: 30px;
     text-decoration: none;
     color: rgb(13, 84, 215);
-    background-color: #fff;
+    background-color: rgb(238, 242, 243);
     border-radius: 50%;
     padding: 14px 13px;
 }
@@ -314,7 +299,7 @@
     border: none;
     border-radius: 25px;
     font-weight: 500;
-    background-color: transparent;
+    background-color: rgb(238, 242, 243) !important;
 }
 
 
@@ -350,9 +335,14 @@
 .third-section .trainers-card {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     margin: 60px auto;
     gap: 20px;
+}
+
+.third-section .trainers-card #second-card img {
+    height: 270px;
+    object-fit: cover;
 }
 
 .third-section .trainers-card .team-member-card img {
@@ -383,7 +373,7 @@
 .fourth-section .fourth-section-left-right {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     margin: 50px auto;
 }
 
@@ -434,7 +424,7 @@
  /* fifth-SECTION GET IN TOUCH & QUICK LINKS & OUR SERVICES */
 
 .fifth-section-footer-bg  {
-    background: linear-gradient(90deg, rgb(2, 2, 49),rgb(13,84,215));
+    background: linear-gradient(90deg, rgb(13,84,215), rgb(2, 2, 49));
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
@@ -445,7 +435,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 200px;
     gap: 30px;
-    width: 90%;
+    width: 95%;
     margin: 0px auto;
     padding-top: 80px;
     padding-bottom: 140px;
@@ -465,7 +455,7 @@
 }
 
 .fifth-section-footer-bg .fifth-section-footer-overlay .fifth-section-footer-contents .grid-one a img {
-    width: 100%;
+    width: 80%;
 }
 
 .fifth-section-footer-bg .fifth-section-footer-overlay .fifth-section-footer-contents .grid-one p {
@@ -601,9 +591,14 @@
 
 
 @media screen and (max-width:1024px){
+
+body {
+    overflow-x: hidden;
+}    
+
     
 .first-section {
-    padding-top: 0vh;
+    padding-top: 20vh !important;
 }
     
 .second-section .second-section-left-right {
@@ -632,7 +627,57 @@
 
 }
 
+@media screen and (max-width:760px){
+.first-section  {
+    padding-top: 90px;
+}
+
+.first-section .background-img .overlay .first-section-left-right {
+    display: block;
+    
+}
+
+.first-section .background-img .overlay .first-section-left-right .first-section-left {
+    text-align: center;
+    width: 100%;
+}
+
+
+.first-section .background-img .overlay .first-section-left-right .first-section-right {
+    width: 100%;
+}
+
+.third-section .trainers-card {
+    display: block;
+}
+
+.fourth-section .fourth-section-left-right {
+    display: block;
+}
+
+.fourth-section .fourth-section-left-right .fourth-section-left img {
+    width: 100%;
+}
+
+.fourth-section .fourth-section-left-right .fourth-section-right p {
+    width: 100%;
+}
+
+.fifth-section-footer-bg .fifth-section-footer-overlay .fifth-section-footer-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: none;
+}
+
+
+}
+
 @media screen and (max-width:660px){
+
+body {
+    overflow-x: hidden;
+}    
+
     
 .first-section .background-img .overlay .first-section-left-right {
     display: block;
@@ -747,7 +792,8 @@
 }
 
 @media screen and (max-width:360px){
-    .navbar-toggler {
-        margin-left: 0px !important;
-    }
+body {
+    overflow-x: hidden;
+}    
+
 }

@@ -26,7 +26,7 @@
 
             if (count < target) {
                 counter.innerText = Math.ceil(count + increment);
-                setTimeout(updateCount, 10);
+                setTimeout(updateCount, 40);
             } else {
                 counter.innerText = target + "+"; // Add the plus sign after completion
             }
@@ -113,9 +113,15 @@ if (btn5) {
   });
 }
 
+let read_more =document.getElementById ("read_more")
+
+if (read_more) {
+  read_more.addEventListener ("click", function (){
+    window.location.href = "Service.html"
+  })
+}
+
 // functions command for buttons end
-
-
 
 
 

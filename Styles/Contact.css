@@ -9,60 +9,35 @@
 
 .section {
     background-color: rgb(13, 84, 215);
+    width: 100%;
 }
 
-.navbar-toggler {
-    margin-left: 250px !important;
-}
-    
-
-.section .nav-bar {
-    display: flex;
-    height: 68px;
-    justify-content: space-between;
+.navbar {
+    margin: 0px auto;
+    height: 95px;
     background-color: rgb(13, 84, 215) !important;
     position: fixed;
     width: 100%;
     z-index: 99;
 }
 
-.section .nav-bar .logo a {
-    width: 10%;
-}
-
-.section .nav-bar .logo a img {
-    width: 100%;
-    margin-left: 47px;
-}
-
-
-.section .nav-links .navbar-nav {
+.navbar .navbar-nav {
+    background-color: rgb(13, 84, 215);
+    color: #fff !important;
     margin-left: auto;
-    padding-right: 35px;
 }
 
-.section .nav-links .navbar-nav a {
-    color: #fff;
-    margin-right: 20px;
-    font-weight: 600;
-    position: relative;
+.navbar .navbar-nav .nav-item a {
+    color: #fff !important;
+    font-size: 17px;
+    font-weight: 600 !important;
+    margin: 0px 5px;
+    opacity: 1;
 }
 
-.section .nav-links a::after {
-    content: "";
-    position: absolute;
-    background-color: #fff;
-    width: 100%;
-    height: 3px;
-    bottom: -6px;
-    left: 0;
-    border-radius: 5px;
-    transform: scale(0);
-    transition: 0.5s;
-}
-
-.section .nav-links a:hover::after {
-    transform: scale(1);
+.navbar .navbar-nav .nav-item a:hover {
+    color: #000000;
+    opacity: 0.8;
 }
 
 /* <DIV>ABOUT SECTION</DIV> */
@@ -90,7 +65,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 95%;
     margin: 0px auto;
     padding-top: 90px;
     
@@ -157,7 +132,7 @@
 .second-div-section .second-section-left-right {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     margin: 30px auto;
     align-items: center;
 }
@@ -205,7 +180,7 @@
 .third-section .third-section-left-right {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     margin: 50px auto;
 }
 
@@ -257,7 +232,7 @@
  /* FOURTH-SECTION GET IN TOUCH & QUICK LINKS & OUR SERVICES */
 
 .Fourth-section-footer-bg  {
-    background: linear-gradient(90deg, rgb(2, 2, 49),rgb(13,84,215));
+    background: linear-gradient(90deg, rgb(13,84,215), rgb(2, 2, 49));
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
@@ -268,7 +243,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 200px;
     gap: 30px;
-    width: 90%;
+    width: 95%;
     margin: 0px auto;
     padding-top: 80px;
     padding-bottom: 140px;
@@ -288,7 +263,7 @@
 }
 
 .Fourth-section-footer-bg .Fourth-section-footer-overlay .Fourth-section-footer-contents .grid-one a img {
-    width: 100%;
+    width: 80%;
 }
 
 .Fourth-section-footer-bg .Fourth-section-footer-overlay .Fourth-section-footer-contents .grid-one p {
@@ -424,9 +399,13 @@
 
 @media screen and (max-width:768px) {
 
-    .up-arrow {
-        display: none;
-    }
+body {
+    overflow-x: hidden;
+}   
+
+.up-arrow {
+    display: none;
+}
 
 .first-section .background-img .overlay .first-section-left-right {
     display: block;
@@ -446,10 +425,6 @@
 .second-div-section {
     width: 80%;
 }
-
-/* .third-section {
-    width: 90%;
-} */
 
 .third-section .third-section-left-right {
     display: block;
@@ -526,10 +501,9 @@
 
 @media screen and (max-width:660px) {
 
-.section .nav-bar .logo a img {
-    width: 100%;
-    margin-left: 0px;
-}
+body {
+    overflow-x: hidden;
+}   
 
 .first-section .background-img .overlay .first-section-left-right {
     display: block;
@@ -645,14 +619,9 @@
 
 @media screen and (max-width:412px){
 
-.navbar-toggler {
-    margin-left: 200px !important;
-}
-    
-.section .nav-bar .logo a img {
-    width: 100%;
-    margin-left: 0px;
-}
+body {
+    overflow-x: hidden;
+}   
 
 .second-div-section {
     width: 100%;

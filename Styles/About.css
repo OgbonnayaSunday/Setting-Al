@@ -11,9 +11,11 @@
     background-color: rgb(13, 84, 215);
 }
 
-.section .nav-bar {
+
+.navbar {
+    margin: 0px auto;
     display: flex;
-    height: 68px;
+    height: 95px;
     justify-content: space-between;
     background-color: rgb(13, 84, 215) !important;
     position: fixed;
@@ -21,45 +23,25 @@
     z-index: 99;
 }
 
-.section .nav-bar .logo a {
-    width: 10%;
-}
-
-.section .nav-bar .logo a img {
-    width: 100%;
-    /* padding: 20px 0px; */
-}
-
-
-.section .nav-links .navbar-nav {
+.navbar .navbar-nav {
+    background-color: rgb(13, 84, 215);
+    color: #fff !important;
     margin-left: auto;
-    padding-right: 40px;
 }
 
-.section .nav-links .navbar-nav a {
-    color: #fff;
-    margin-right: 20px;
-    font-weight: 600;
+.navbar .navbar-nav .nav-item a {
+    color: #fff !important;
+    font-size: 17px;
+    font-weight: 600 !important;
+    margin: 0px 20px;
+    opacity: 1;
     position: relative;
 }
 
-.section .nav-links a::after {
-    content: "";
-    position: absolute;
-    background-color: #fff;
-    width: 100%;
-    height: 3px;
-    bottom: -6px;
-    left: 0;
-    border-radius: 5px;
-    transform: scale(0);
-    transition: 0.5s;
+.navbar .navbar-nav .nav-item a:hover {
+    color: #000000;
+    opacity: 0.8;
 }
-
-.section .nav-links a:hover::after {
-    transform: scale(1);
-}
-
 /* <DIV>ABOUT SECTION</DIV> */
 
 
@@ -83,7 +65,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 95%;
     margin: 0px auto;
     
 }
@@ -140,7 +122,7 @@
 .second-section .second-section-left-right {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     margin: 0px auto;
     padding-top: 100px;
 }
@@ -246,7 +228,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 95%;
     margin: 0px auto;
     padding-top: 50px;
 }
@@ -394,7 +376,7 @@
 .fourth-section .team-member {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     margin: 60px auto;
     gap: 20px;
 }
@@ -418,7 +400,7 @@
 .fifth-section .fifth-section-left-right {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     align-items: center;
     margin: 0px auto;
 }
@@ -476,7 +458,7 @@
 .sixth-section .sixth-section-left-right {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     margin: 50px auto;
 }
 
@@ -527,7 +509,7 @@
  /* SIXTH-SECTION GET IN TOUCH & QUICK LINKS & OUR SERVICES */
 
 .seventh-section-footer-bg  {
-    background: linear-gradient(90deg, rgb(2, 2, 49),rgb(13,84,215));
+    background: linear-gradient(90deg, rgb(13,84,215), rgb(2, 2, 49));
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
@@ -538,7 +520,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 200px;
     gap: 30px;
-    width: 90%;
+    width: 95%;
     margin: 0px auto;
     padding-top: 80px;
     padding-bottom: 140px;
@@ -558,7 +540,7 @@
 }
 
 .seventh-section-footer-bg .seventh-section-footer-overlay .seventh-section-footer-contents .grid-one a img {
-    width: 100%;
+    width: 80%;
 }
 
 .seventh-section-footer-bg .seventh-section-footer-overlay .seventh-section-footer-contents .grid-one p {
@@ -693,9 +675,14 @@
 
 
 @media screen and (max-width:1024px){
+    
+body {
+    overflow-x: hidden;
+}    
 
-.first-section  {
-    padding-top: 8vh;
+
+.first-section {
+    padding-top: 15vh !important;
 }
 
 .third-section .third-section-left-right {
@@ -919,6 +906,7 @@ body {
 }
 
 @media screen and (max-width:550px){
+
 body {
     overflow-x: hidden;
 }
@@ -927,8 +915,9 @@ body {
 /* ABOUT SECTION */
 
 .first-section  {
-    padding-top: 0px !important;
+    padding-top: 80px !important;
     width: 100%;
+
 }
 
 .first-section .background-img .overlay .first-section-left-right {
@@ -1120,35 +1109,28 @@ body {
 }
 
 @media screen and (max-width: 460px) {
-.navbar-toggler {
-    margin-left: 210px !important;
-}
+body {
+    overflow-x: hidden;
+}    
 
 }
 
 @media screen and (max-width: 380px) {
+
 body {
     overflow-x: hidden;
 }
 
-.section .nav-links .navbar-nav {
-    margin-left: auto;
-    padding-right: 40px;
-    position: relative;
-    left: 90px;
-}
-
-
 /* ABOUT SECTION */
 
 .first-section  {
-    padding-top: 0px !important;
+    padding-top: 10px !important;
     width: 100%;
 }
 
 .first-section .background-img .overlay .first-section-left-right {
     display: block;
-    width: 85%;
+    width: 90%;
 }
 
 .first-section .background-img .overlay .first-section-left {
@@ -1156,7 +1138,12 @@ body {
 }
 
 .first-section .background-img .overlay .first-section-left-right .first-section-right {
-    width: 100%;
+    width: 90%;
+}
+
+.first-section .background-img .overlay .first-section-left-right .first-section-right img {
+    width: 100% !important;
+    text-align: center;
 }
 
 /* SECOND SECTION WE OFFER BUSSINESS */
@@ -1334,7 +1321,8 @@ body {
 }
 
 @media screen and (max-width:360px){
-    .navbar-toggler {
-        margin-left: 0px !important;
-    }
+body {
+    overflow-x: hidden;
+}    
+
 }
