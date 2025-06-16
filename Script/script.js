@@ -1,18 +1,16 @@
-// let preloader = document.getElementById ("preloader");
-// let gridAutoFit = document.querySelector ("gridAutoFit")
+//splash screen
+  window.addEventListener("load", function() {
+    setTimeout (function() {
+        // Hide the splash screen and show the main content after a delay
+        document.getElementById("loading-icon").style.display = "none";
+        document.getElementById("caption").style.display = "none";
+        document.getElementById("splash-screen").style.display = "none";
+        document.getElementById("box").style.display = "block";
+      }, 3000); // 3 seconds delay
+  });
 
-// window.addEventListener ("load", function (){
-//     if (preloader.style.display === "none" || gridAutoFit.style.display ==="") {
-//             preloader.style.display = "block"
-//             setTimeout ("preloader", "3000")
 
-
-//     } else {
-//         preloader.style.display = "none";
-        
-//     }
-// })
-
+// counter start
 
     const counters = document.querySelectorAll('.counter');
     const speed = 200; // lower = faster
@@ -35,6 +33,7 @@
         updateCount();
     });
 
+    //counter end
 
 
 
